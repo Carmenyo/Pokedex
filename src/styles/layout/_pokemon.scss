@@ -14,11 +14,17 @@
             height: 150px;
         }
     }
-    &__imageContainer:hover {
-        
-    }
 
     &__body{
         color: black;
+        text-transform: capitalize;
     }
+    &__body:hover{
+        color: orangered;
+    }
+}
+.pokemon-heart-button{
+    background-color: greenyellow;
+    border-style: none;
+    font-size: 20px;
 }

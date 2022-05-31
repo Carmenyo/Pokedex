@@ -17,7 +17,7 @@ const Pokemon = (props) => {
         </div>
         <div className="pokemonCard__body">
             <div className="pokemonCard__body-top">
-                <h3> {pokemon.name}</h3>
+                <h3 > {pokemon.name}</h3>
                 <div>#{pokemon.id}</div>
             </div>
             <div className="card-bottom">
@@ -28,7 +28,7 @@ const Pokemon = (props) => {
                         )
                     })}
                 </div>
-                <button className="pokemon-heart-btn" onClick={onHeartClick}>
+                <button className="pokemon-heart-button" onClick={onHeartClick}>
                     {heart}
                 </button>
             </div>
