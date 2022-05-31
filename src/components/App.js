@@ -1,24 +1,36 @@
-// import sirve para enlazar /traer las dependencias que necesitamos.
-// Librerías JS
-// CSS
-// Imágenes
-// JSON
-
+import React, {useEffect, useState} from "react";
 import "../styles/App.scss";
 import Navbar from "./Navbar";
+import Pokedex from "./Pokedex";
 import Searchbar from "./Searchbar";
-import reset from "../styles/core/_reset.scss"
 
-// Función principal.
 function App() {
+
+  const {loading, setLoading} = useState(false);
+  const {pokemons, setPokemons} = useState({});
+  const fetchPokemons = async () => {
+    try {
+    setLoading (true)
+    const data = await getPokemons()
+    setPokemons (result);
+    setLoading (false);
+  }
+    catch (error) {
+      console.log ("fetchPokemons error: ", error )
+}
+  }
+  useEffect(() => {
+    console.log("carregou")
+    fetchPokemons():
+  }, [] )
+
+
   return (
-    <>
-      <div>
-        <Navbar/>
-        <Searchbar/>
-      </div>
-    </>
+    <div>
+      <Navbar />
+      <Searchbar />
+      <Pokedex pokemons = {pokemons} loading = {loading} />
+    </div>
   );
 }
-
 export default App;
