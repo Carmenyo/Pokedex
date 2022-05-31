@@ -1,0 +1,14 @@
+.pagination{
+    display: flex;
+    font-size: 20px;
+    gap: 8px;
+  align-items:center ;
+
+&__button{
+height: 50px;
+width: 50px;
+font-size: 40px;
+border-style: none;
+background-color: white;
+}
+}

@@ -1,0 +1,24 @@
+.pokemonCard{
+    padding: 10px;
+    height: 300px;
+    background-color: greenyellow;
+    border: solid black 2px;
+
+   
+    color: black;
+    border-radius: 15px;
+
+    &__imageContainer{
+      background-color: black;
+        &-image{
+            height: 150px;
+        }
+    }
+    &__imageContainer:hover {
+        
+    }
+
+    &__body{
+        color: black;
+    }
+}

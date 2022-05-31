@@ -2,18 +2,35 @@
 display: flex;
 align-items: center;
 text-align: center;
-justify-content: space-between
+justify-content: space-between;
+
+&__title {
+    display: flex;
+    align-items: stretch;
 }
 
-.navBar__image{
-height: 100px;
+&__image{
+height: 130px;
 }
 
-.navBar__photo{
-    height: 200px;
+&__photo{
+    height: 300px;
 }
 
-.navBar__autor{
-    font-size: 30px;
+&__autor{
+    font-size: 40px;
     font-family:fantasy;
+    margin-left: 30px;
 } 
+
+&__favorites {
+    font-size: 20px;
+    font-family: fantasy;
+}
+&__pokeball {
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+}

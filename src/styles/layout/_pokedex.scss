@@ -1,5 +1,25 @@
-.pokedex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.pokedex {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: fantasy;
+  }
+
+  &__loading {
+    font-size: 30px;
+    font-weight: 900;
+    color: orangered;
+  }
+
+  &__grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
 }
