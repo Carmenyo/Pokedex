@@ -6,6 +6,8 @@
 
 import "../styles/App.scss";
 import Navbar from "./Navbar";
+import Searchbar from "./Searchbar";
+import reset from "../styles/core/_reset.scss"
 
 // Función principal.
 function App() {
@@ -13,6 +15,7 @@ function App() {
     <>
       <div>
         <Navbar/>
+        <Searchbar/>
       </div>
     </>
   );
