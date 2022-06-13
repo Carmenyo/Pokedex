@@ -1,9 +1,4 @@
-import React, {useContext} from "react";
-import FavoriteContext from "../contexts/favoritesContext";
-import "../styles/layout/_pokemon.scss"
-
-
-const Pokemon = (props) => {
+const PokemonDetail = () => {
     const {favoritePokemons, updateFavoritePokemons} = useContext(FavoriteContext)
     const {pokemon} = props;
     const onHeartClick = () => {
@@ -24,10 +19,7 @@ const Pokemon = (props) => {
                 <div className="pokemon-type">
                     {pokemon.types.map((type, index) => {
                         return (
-                            <>
                             <div key={index} className="pokemon-type-text">{type.type.name}</div>
-                            <div key={index}>{type.weight}</div>
-                            </>
                         )
                     })}
                 </div>
