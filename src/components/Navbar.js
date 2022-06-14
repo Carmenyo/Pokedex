@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className='navBar'>
       <div className='navBar__title'>
         <img alt='pokeApi-logo' src={logo} className='navBar__image' />
-        <p className='navBar__autor'>de Carlos Rodero</p>
+        <p className='navBar__autor'>de Carlitos</p>
       </div>
 
       <div>
