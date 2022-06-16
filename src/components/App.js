@@ -84,11 +84,13 @@ function App() {
         updateFavoritePokemons: updateFavoritePokemons,
       }}
     >
+    
+
       <div>
         <Navbar />
         <Searchbar onSearch={onSearchHandler}/>
         {notFound ? (
-          <div class-name="not-found-text"> Meteu essa?! </div>
+          <div class-name="not-found-text"> No hay ningún Pokemon con ese nombre </div>
         ) : 
         (<Pokedex
           pokemons={pokemons}
