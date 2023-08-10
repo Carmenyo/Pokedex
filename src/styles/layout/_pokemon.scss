@@ -20,11 +20,12 @@
         text-transform: capitalize;
     }
     &__body:hover{
-        color: orangered;
+        color: rgb(236, 9, 9);
     }
 }
 .pokemon-heart-button{
-    background-color: greenyellow;
+    background-color: rgb(244, 245, 242);
+    margin-top: 1rem;
     border-style: none;
     font-size: 20px;
 }
